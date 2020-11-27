@@ -8,23 +8,49 @@
 </head>
 <style>
 
-    .box{
+    .box {
         width: 300px;
         height: 300px;
-        border: 1px solid black;    
+        border: 1px solid black;
+        margin: 0 auto; 
+        padding-top: 30px;
         }
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+    .enterText {
+        padding-top: 10px;
+        margin: 0 auto; 
+        width: 300px;
+        height: 50px;
+    }
+    .textArea {
+        float: left;
+        width: 220px;
+        height: 50px;
+    }
+    .btn {
+        margin-top: 30px;
+        float :right;
+    }
 
 </style>
 <body>
- <input type="text">
- <button>发送请求</button>
- <div class="box"></div>
-
+    <div class="main">
+        <div class="box"></div>
+        <div class="enterText">
+            <textarea class="textArea" autofocus= "autofocus" placeholder="最多20个字" maxlength="20"></textarea>
+            <div class="btn"> 
+            <button>发送消息</button>
+            </div>
+        </div>
+    </div>  
  <script>
     const TYPE_ENTER = 0;
     const TYPE_LEAVE = 1;
     const TYPE_MSG = 2;
-     var input = document.querySelector('input');
+     var input = document.querySelector('textarea');
      var button = document.querySelector('button');
      var div = document.querySelector('div');
     //1.创建websocket
