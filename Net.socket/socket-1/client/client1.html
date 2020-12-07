@@ -7,139 +7,153 @@
     <title>1-客户端</title>
 </head>
 <style>
-body {
-    background-image: url(asserts/bj.jpg);
-    background-size:1450px 900px;
-    background-repeat: no-repeat;
-}
+    body {
+        background-image: url(asserts/bj.jpg);
+        background-size: 1450px 900px;
+        background-repeat: no-repeat;
+    }
 
-.textArea {
+    .textArea {
         float: left;
         width: 220px;
         height: 50px;
     }
-.window {
-    width: 1004px;
-    height: 576px;
-    background-color: skyblue;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-.header {
-    width: 100%;
-    height: 62px;
-    box-sizing: border-box;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 2px 10px rgba(150,198,214,.15);
-    background-color: #ffffff;
-    text-align: center;
-}
-.container {
-    width: 100%;
-    height: 514px;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-.left {
-    float: left;
-    width: 774px;
-    height: 100%;
-    border-radius: 0 0 10px 10px ;
 
-}
-.massageWindow {
-    height: 432px;
-    width: 100%;
-    background-color: #f5f5f5;
-    box-shadow:0 3px 10px rgba(150,198,214,.1) inset;
+    .window {
+        width: 1004px;
+        height: 576px;
+        background-color: skyblue;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
 
-}
-.msg {
-    margin: auto;
-    padding: 10px;
-    height: 20px;
-    width: 95%;
-}
-.unameLeft {
-    float: left;
-    height: 100%;
-    width: auto;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: aqua;
-}
-.unameRight {
-    float: right;
-    height: 100%;
-    width: auto;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: rgb(112, 114, 243);
-}
-.msgLeft {
-    float: left;
-    height: 100%;
-    padding: 10px;
+    .header {
+        width: 100%;
+        height: 62px;
+        box-sizing: border-box;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 2px 10px rgba(150, 198, 214, .15);
+        background-color: #ffffff;
+        text-align: center;
+    }
 
-    background-color: #ffffff;
-    border-radius: 10px 10px 10px 0;
-}
-.msgRight {
-    float: right;
-    height: 100%;
-    padding: 10px;
+    .container {
+        width: 100%;
+        height: 514px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
 
-    background-color: #ffffff;
-    border-radius: 10px 10px 10px 0;
-}
-.enterText {
-    height: 80px;
-    width: 100%;
-    background-color: #ffffff;
-}
-.textArea {
-    margin-top: 30px;
-    height: 30px;
-    width: 650px;
-    border: 0;
-    outline:none;
-    background: transparent;
-    border: none;
-    resize: none;
-    border-radius: 0 0 0  10px;
-}
-.enterBtn {
-    margin-left: 22px;
-    margin-top: 24px;
-    padding: 6px 25px;
-    border-radius: 15px;
-    background-color: #e9ecee;
-    color: #999;
-    outline:none;
-    border: none;
-    
+    .left {
+        float: left;
+        width: 774px;
+        height: 100%;
+        border-radius: 0 0 10px 10px;
 
-}
-.right {
-    float: left;
-    width: 230px;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 0 0 10px 0;
-    box-shadow:0 3px 10px rgba(89, 94, 95, 0.1) inset;
-    text-align: center;
-}
-.onlineList {
-    margin: 0 auto;
-    height: 30px;
-    padding-top: 5px;
-    width: 60%;
-    background-color: rgb(249 235 196);
-    border-radius: 6px;
-}
+    }
+
+    .massageWindow {
+        height: 432px;
+        width: 100%;
+        background-color: #f5f5f5;
+        box-shadow: 0 3px 10px rgba(150, 198, 214, .1) inset;
+
+    }
+
+    .msg {
+        margin: auto;
+        padding: 10px;
+        height: 20px;
+        width: 95%;
+    }
+
+    .unameLeft {
+        float: left;
+        height: 100%;
+        width: auto;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: aqua;
+    }
+
+    .unameRight {
+        float: right;
+        height: 100%;
+        width: auto;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgb(112, 114, 243);
+    }
+
+    .msgLeft {
+        float: left;
+        height: 100%;
+        padding: 10px;
+
+        background-color: #ffffff;
+        border-radius: 10px 10px 10px 0;
+    }
+
+    .msgRight {
+        float: right;
+        height: 100%;
+        padding: 10px;
+
+        background-color: #ffffff;
+        border-radius: 10px 10px 10px 0;
+    }
+
+    .enterText {
+        height: 80px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .textArea {
+        margin-top: 30px;
+        height: 30px;
+        width: 650px;
+        border: 0;
+        outline: none;
+        background: transparent;
+        border: none;
+        resize: none;
+        border-radius: 0 0 0 10px;
+    }
+
+    .enterBtn {
+        margin-left: 22px;
+        margin-top: 24px;
+        padding: 6px 25px;
+        border-radius: 15px;
+        background-color: #e9ecee;
+        color: #999;
+        outline: none;
+        border-color: darkgray;
 
 
+    }
+
+    .right {
+        float: left;
+        width: 230px;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 0 0 10px 0;
+        box-shadow: 0 3px 10px rgba(89, 94, 95, 0.1) inset;
+        text-align: center;
+    }
+
+    .onlineList {
+        margin: 0 auto;
+        height: 30px;
+        padding-top: 5px;
+        width: 60%;
+        background-color: rgb(249 235 196);
+        border-radius: 6px;
+    }
 </style>
+
 <body>
     <!-- <div class="main">
         <div class="box"></div>
@@ -152,103 +166,147 @@ body {
     </div>   -->
     <div class="window">
         <div class="header">
-                <p style="font-size: 20px; padding-top: 20px;">Socket ChatRoom</p>
+            <p style="font-size: 20px; padding-top: 20px;">Socket ChatRoom</p>
         </div>
 
         <div class="container">
             <div class="left">
                 <div class="massageWindow">
-                    <div class="msg">
-                        <div class="unameLeft">client0:</div>
-                        <div class="msgLeft"> 你好</div>
-                    </div>
-                    <div class="msg">
-                        <div class="unameRight">:client1</div>
-                        <div class="msgRight">你好</div>
-                    </div>
-                    <div class="msg">
-                        <div class="unameLeft">client0</div>
-                        <div class="msgLeft"> 你好</div>
-                    </div>
-                    <div class="msg">
-                        <div class="unameRight">:client1</div>
-                        <div class="msgRight">你好</div>
-                    </div>
+
                 </div>
                 <div class="enterArea">
-                     <textarea class="textArea" id="textMsg" autofocus= "autofocus" placeholder="" maxlength="40"></textarea>
+                    <textarea class="textArea" id="textMsg" autofocus="autofocus" placeholder=""
+                        maxlength="40"></textarea>
                     <button class="enterBtn" id="Btn">发送</button>
                 </div>
             </div>
             <div class="right">
                 <h4>在线成员</h4>
-                <div class="onlineList">client0</div>
-                <div class="onlineList">client1</div>
+                <div class="rightList"></div>
+                <!-- <div class="onlineList">client0</div> -->
+                <!-- <div class="onlineList">client1</div> -->
 
             </div>
         </div>
-        
+
     </div>
- <script>
-    const TYPE_MINE = 0;
-    const TYPE_OTHERS = 1;
-    const TYPE_ENTEROUT = 2;
-     var textArea = document.querySelector('.textArea');
-     var enterBtn = document.querySelector('.enterBtn');
-     var massageWindow = document.querySelector('.massageWindow');
-    //1.创建websocket
+    <script>
+        const TYPE_MINE = 'client-1';
+        const TYPE_MASG = 'msg';
+        const TYPE_ENTEROUT = 'enterMsg';
+        const TYPE_OUT = 0;
+        const TYPE_ENTER = 1;
+
+        var textArea = document.querySelector('.textArea');
+        var enterBtn = document.querySelector('.enterBtn');
+        var massageWindow = document.querySelector('.massageWindow');
+        var ClientList = document.querySelector('.rightList');
+        var onlineNum = 0;
+        var onlineList = [];
+        //1.创建websocket
         //参数是websocket的服务地址
-    var socket = new WebSocket('ws://localhost:3001');
-    // 2.当和websocket服务连接成功的时候出发
-    socket.addEventListener('open',function(){
-        console.log('连接服务器成功了');
-        massageWindow.innerHTML = '连接服务器成功';
-    })
-    // 3.主动给websocket服务发送信息
-    enterBtn.addEventListener('click',function(){
-        var value = textArea.value;
-        socket.send(value);
-        textArea.value = '';
-    })
-    socket.addEventListener('message',function(e){
-        console.log(e.data);
-        
-        var data = JSON.parse(e.data);
-        console.log(data.msg);
-        var newMsg = document.createElement('div');
-        var newMsgChlid = document.createElement('div');
-        var newMsgUser = document.createElement('div');
+        var socket = new WebSocket('ws://localhost:3001');
+        // 2.当和websocket服务连接成功的时候出发
+        socket.addEventListener('open', function () {
+            console.log('连接服务器成功了');
+            var data = JSONtemp(TYPE_ENTER, TYPE_ENTEROUT)
+            socket.send(data);
+            massageWindow.innerHTML = '连接服务器成功';
+        })
+        // 3.主动给websocket服务发送信息
+        enterBtn.addEventListener('click', function () {
+            var value = textArea.value;
+            var data = JSONtemp(value, TYPE_MASG)
+            socket.send(data);
+            textArea.value = '';
+        })
 
-        newMsg.setAttribute("class","msg");
-        newMsgChlid.innerHTML =data.msg
-        if(data.type === 'client-1'){
-            newMsgChlid.setAttribute("class","msgRight");
-            newMsgUser.setAttribute("class","unameRight");
-            newMsgUser.innerHTML = ':mine';
+        socket.addEventListener('message', function (e) {
+            console.log(e.data);
+            var dataList = getExecStrs(e.data);
+            console.log(dataList);
 
-        }else if (data.type ==='client-0'){
-            newMsgChlid.setAttribute("class","msgLeft");
-            newMsgUser.setAttribute("class","unameLeft");
-            newMsgUser.innerHTML = 'outhers:';
+            //var data = JSON.parse(e.data);
+            //console.log(data.msg);
+            var newMsg = document.createElement('div');
+            var newMsgChlid = document.createElement('div');
+            var newMsgUser = document.createElement('div');
+
+            newMsg.setAttribute("class", "msg");
+            var data = dataList[0];
+            if (data.type === TYPE_MASG) {
+                newMsgChlid.innerHTML = data.msg;
+
+                if (data.user === TYPE_MINE) {
+                    newMsgChlid.setAttribute("class", "msgRight");
+                    newMsgUser.setAttribute("class", "unameRight");
+                    newMsgUser.innerHTML = ':'+data.user;
+                }
+                else {
+                    newMsgChlid.setAttribute("class", "msgLeft");
+                    newMsgUser.setAttribute("class", "unameLeft");
+                    newMsgUser.innerHTML = data.user+':';
+                }
+                newMsg.appendChild(newMsgUser);
+                newMsg.appendChild(newMsgChlid);
+                massageWindow.appendChild(newMsg);
+
+            } else
+
+                if (data.type === TYPE_ENTEROUT) {
+                    ClientList.innerHTML = '';
+                    dataList.forEach(function (value, index) {
+                        var newCLient = document.createElement('div');
+                        newCLient.setAttribute("class", "onlineList");
+                        newCLient.setAttribute("id", value.user);
+                        newCLient.innerHTML = value.user;
+                        ClientList.appendChild(newCLient);
+
+                    })
+
+                }
 
 
-        } else{
-            newMsgChlid.setAttribute("class","msgLeft");
+        });
+        function JSONtemp(msg, type) {
+            var data = JSON.stringify({
+                user: 'client-1',
+                type: type,
+                msg: msg,
+                time: getDate(),
+            })
+            return data;
+        };
+        function getDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var dates = date.getDate();
+            var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六',]
+            var day = date.getDay();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+
+            return hours + ':' + minutes + ':' + seconds;
         }
-        newMsg.appendChild(newMsgUser);
-        newMsg.appendChild(newMsgChlid);
-        massageWindow.appendChild(newMsg);
-
-    });
-    function JSONtemp(msg){
-    var data=JSON.stringify({
-        type:'client-0',
-        msg:msg,
-        time: getDate(),
-    })
-    return data;
-}
- </script>
+        function getExecStrs(str) {
+            var reg = /\{(.+?)\}/g;
+            var list = [];
+            var result = null;
+            do {
+                result = reg.exec(str)
+                result && list.push(result[1])
+            } while (result);
+            list.forEach(function (value, index) {
+                list[index] = '{' + value + '}';
+                list[index] = JSON.parse(list[index]);
+                console.log(list[index]);
+            })
+            return list;
+        }
+    </script>
 </body>
 
 </html>

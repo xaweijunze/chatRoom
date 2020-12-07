@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0-客户端</title>
+    <title>2-客户端</title>
 </head>
 <style>
     body {
@@ -131,7 +131,6 @@
         outline: none;
         border-color: darkgray;
 
-
     }
 
     .right {
@@ -191,7 +190,7 @@
 
     </div>
     <script>
-        const TYPE_MINE = 'client-0';
+        const TYPE_MINE = 'client-2';
         const TYPE_MASG = 'msg';
         const TYPE_ENTEROUT = 'enterMsg';
         const TYPE_OUT = 0;
@@ -205,7 +204,7 @@
         var onlineList = [];
         //1.创建websocket
         //参数是websocket的服务地址
-        var socket = new WebSocket('ws://localhost:3000');
+        var socket = new WebSocket('ws://localhost:3002');
         // 2.当和websocket服务连接成功的时候出发
         socket.addEventListener('open', function () {
             console.log('连接服务器成功了');
@@ -215,7 +214,10 @@
         })
         // 3.主动给websocket服务发送信息
         enterBtn.addEventListener('click', function () {
+
             var value = textArea.value;
+            if(value =='')
+                return;
             var data = JSONtemp(value, TYPE_MASG)
             socket.send(data);
             textArea.value = '';
@@ -245,7 +247,7 @@
                 else {
                     newMsgChlid.setAttribute("class", "msgLeft");
                     newMsgUser.setAttribute("class", "unameLeft");
-                    newMsgUser.innerHTML = data.user + ':';
+                    newMsgUser.innerHTML = data.user+':';
                 }
                 newMsg.appendChild(newMsgUser);
                 newMsg.appendChild(newMsgChlid);
@@ -270,7 +272,7 @@
         });
         function JSONtemp(msg, type) {
             var data = JSON.stringify({
-                user: 'client-0',
+                user: 'client-2',
                 type: type,
                 msg: msg,
                 time: getDate(),
