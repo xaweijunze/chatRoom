@@ -205,7 +205,7 @@
         var onlineList = [];
         //1.创建websocket
         //参数是websocket的服务地址
-        var socket = new WebSocket('ws://localhost:3000');
+        var socket = new WebSocket('ws://172.20.10.2:3000');
         // 2.当和websocket服务连接成功的时候出发
         socket.addEventListener('open', function () {
             console.log('连接服务器成功了');

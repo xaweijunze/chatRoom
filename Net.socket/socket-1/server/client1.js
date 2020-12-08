@@ -1,7 +1,7 @@
 
 var net = require('net');
 var port = 8080;
-var host = '127.0.0.1';
+var host = '172.20.10.2';
 var client= new net.Socket();
 //创建socket客户端
 client.setEncoding('utf-8');
